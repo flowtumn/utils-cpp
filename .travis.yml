@@ -19,6 +19,8 @@ install:
     - if [ "$CXX" == "clang++" ]; then sudo apt-get install --allow-unauthenticated -qq clang-3.4; fi
     - if [ "$CXX" == "clang++" ]; then export CXX="clang++-3.4"; fi
 script:
-    - cmake ./
+    - OUT_BUILD_DIR=`git rev-parse HEAD`
+    - mkdir ./${OUT_BUILD_DIR} && cd ./${OUT_BUILD_DIR}
+    - cmake ../
     - cmake --build ./
     - ctest
