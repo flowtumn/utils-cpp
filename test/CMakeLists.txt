@@ -1,7 +1,7 @@
 set(TEST_PROJECT_NAME ${PROJECT_NAME}-test)
 
 set(SOURCES
-  test_main.cpp
+  ${PROJECT_SOURCE_DIR}/test/test_main.cpp
 )
 
 add_executable(

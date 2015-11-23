@@ -1,5 +1,5 @@
 set(SOURCES
-  dummy.cpp
+  ${PROJECT_SOURCE_DIR}/src/dummy.cpp
 )
 
 add_library(
