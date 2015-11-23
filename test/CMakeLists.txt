@@ -10,10 +10,12 @@ add_executable(
   ${SOURCES}
 )
 
-target_include_directories(
-  ${TEST_PROJECT_NAME}
-  PRIVATE
-  ${INCLUDE_ROOT_DIR}
-)
+include_directories (${INCLUDE_ROOT_DIR})
+
+#target_include_directories(
+#  ${TEST_PROJECT_NAME}
+#  PRIVATE
+#  ${INCLUDE_ROOT_DIR}
+#)
 
 add_test(test ${TEST_PROJECT_NAME})

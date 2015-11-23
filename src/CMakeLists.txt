@@ -8,9 +8,11 @@ add_library(
   ${SOURCES}
 )
 
-target_include_directories(
-  ${PROJECT_NAME}
-  PRIVATE
-  ${INCLUDE_ROOT_DIR}
-)
+include_directories (${INCLUDE_ROOT_DIR})
+
+#target_include_directories(
+#  ${PROJECT_NAME}
+#  PRIVATE
+#  ${INCLUDE_ROOT_DIR}
+#)
 
